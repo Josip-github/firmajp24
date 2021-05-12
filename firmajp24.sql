@@ -28,4 +28,13 @@ CREATE TABLE sudjeluje(
 ALTER TABLE sudjeluje ADD FOREIGN KEY (projekt) REFERENCES projekt(sifra);
 ALTER TABLE sudjeluje ADD FOREIGN KEY (programer) REFERENCES programer(sifra);
 
+INSERT INTO projekt(naziv, cijena)
+values('Projekt 1', 999.99);
+
+INSERT INTO programer(ime,prezime,datumrodjenja,placa)
+values('Michael', 'Jordan', 1970-12-12,1200);
+
+INSERT INTO sudjeluje(projekt, programer, datumpocetka, datumkraja)
+values(1,1,2000-01-01,2015-12-12);
+
 
