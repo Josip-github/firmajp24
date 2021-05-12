@@ -25,4 +25,7 @@ CREATE TABLE sudjeluje(
 	datumkraja datetime
 );
 
+ALTER TABLE sudjeluje ADD FOREIGN KEY (projekt) REFERENCES projekt(sifra);
+ALTER TABLE sudjeluje ADD FOREIGN KEY (programer) REFERENCES programer(sifra);
+
 
