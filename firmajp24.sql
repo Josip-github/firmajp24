@@ -17,6 +17,7 @@ CREATE TABLE programer(
 	
 );
 
+
 CREATE TABLE sudjeluje(
 	projekt int,
 	programer int,
